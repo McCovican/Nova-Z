@@ -3,6 +3,9 @@
 # Nova Z
 A theme for [PlayNite](https://github.com/JosefNemec/Playnite/) based on darklinkpower's [Nova-X](https://github.com/darklinkpower/Nova-X/).
 
+# Download
+Pre-packaged PlayNite extension files can be found in the [Releases](https://github.com/McCovican/Nova-Z/releases) section.
+
 ## Donations
 All the work I do for Playnite extensions is and will always be free!
 
