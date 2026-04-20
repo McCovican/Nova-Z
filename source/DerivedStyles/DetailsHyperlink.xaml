@@ -7,7 +7,7 @@
         <Setter Property="TextDecorations" Value="{x:Null}" />
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Foreground" Value="White" />
+                <Setter Property="Foreground" Value="{DynamicResource PropertyItemButtonTextHoverBrush}" />
             </Trigger>
         </Style.Triggers>
     </Style>

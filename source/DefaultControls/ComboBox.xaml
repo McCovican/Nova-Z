@@ -20,7 +20,7 @@
                             Style="{DynamicResource HighlightBorder}"
                             Background="{TemplateBinding Background}">
                         <Grid>
-                            <ToggleButton x:Name="ToggleButton" Focusable="False" ClickMode="Press" Margin="0,0,2,0"
+                            <ToggleButton x:Name="ToggleButton" Focusable="False" ClickMode="Press" Margin="5,0,0,0"
                                           IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}">
                                 <ToggleButton.Template>
                                     <ControlTemplate TargetType="{x:Type ToggleButton}">
@@ -97,7 +97,8 @@
 
     <Style TargetType="{x:Type ComboBoxItem}">
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
-        <Setter Property="Background" Value="{DynamicResource ControlBackgroundBrush}" />
+        <Setter Property="Background" Value="Transparent" />
+        <!-- {DynamicResource ControlBackgroundBrush} -->
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Padding" Value="5" />
         <Setter Property="Template">
@@ -136,11 +137,12 @@
             <Setter.Value>
                 <ControlTemplate TargetType="ContentControl">
                     <StackPanel Orientation="Horizontal">
-                        <ComboBox MinWidth="115"
-                                  ItemsSource="{Binding CompletionStatusOptions}" SelectedItem="{Binding Value}">
+                        <ComboBox MinWidth="25"
+                                  ItemsSource="{Binding CompletionStatusOptions}" SelectedItem="{Binding Value}" Background="Transparent" Padding="0" Margin="0" Width="25">
+                            <!-- MinWidth="115" SelectedItem="{Binding Value}" -->
                             <ComboBox.ItemTemplate>
                                 <DataTemplate DataType="{x:Type CompletionStatus}">
-                                    <TextBlock Text="{Binding Name}"/>
+                                    <TextBlock Text="{Binding Name}" Background="Transparent"/>
                                 </DataTemplate>
                             </ComboBox.ItemTemplate>
                         </ComboBox>

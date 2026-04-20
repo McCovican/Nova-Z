@@ -37,7 +37,7 @@
     </Style>
 
     <Style x:Key="PlayButtonViews" TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="#007738" />
+        <Setter Property="Background" Value="#FFA1681A" />
         <Setter Property="Foreground" Value="White" />
         <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}" />
         <Setter Property="BorderThickness" Value="0" />
@@ -71,14 +71,15 @@
                 <Trigger.EnterActions>
                     <BeginStoryboard>
                         <Storyboard TargetProperty="(Background).(SolidColorBrush.Color)">
-                            <ColorAnimation To="#008746" Duration="0:0:0.2" FillBehavior="HoldEnd"/>
+                            <ColorAnimation To="#c27000" Duration="0:0:0.2" FillBehavior="HoldEnd"/>
+                            <!-- 008746-->
                         </Storyboard>
                     </BeginStoryboard>
                 </Trigger.EnterActions>
                 <Trigger.ExitActions>
                     <BeginStoryboard>
                         <Storyboard TargetProperty="(Background).(SolidColorBrush.Color)">
-                            <ColorAnimation To="#007738" Duration="0:0:0.2" FillBehavior="HoldEnd"/>
+                            <ColorAnimation To="#FFA1681A" Duration="0:0:0.2" FillBehavior="HoldEnd"/>
                         </Storyboard>
                     </BeginStoryboard>
                 </Trigger.ExitActions>
