@@ -30,14 +30,6 @@ If you encounter a bug or need help with an issue related specifically to the No
 
 We are not accepting feature requests at this time.
 
-## Installation
-~Option A: Click the `Download` button in the addon database entry here to start the install process.~
-
-Option B: Download the latest packaged `pthm` theme file from the [Releases page](https://github.com/McCovican/Nova-Z/releases/latest) and open it.
-
-~Option C: Download from the Addons browser in Playnite.~
-
-
 ## Extension Support
 Entirely thanks to darklinkpower's original work, this theme provides extensive support for a wide range of available Playnite extensions, enhancing its functionality even further.
 
