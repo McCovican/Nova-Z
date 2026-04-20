@@ -15,24 +15,26 @@
                                 <DockPanel.ContextMenu>
                                     <GameGroupMenu />
                                 </DockPanel.ContextMenu>
-                                <TextBlock DockPanel.Dock="Left"
-                                           FontWeight="Medium"
+                                <Border Grid.Column="0" CornerRadius="7" Background="{DynamicResource DetailsViewGrouCountBackgroundBrush}"  Width="Auto" Padding="7,2,7,2">
+                                    <TextBlock DockPanel.Dock="Left"
+                                           FontWeight="Bold"
                                            VerticalAlignment="Center" HorizontalAlignment="Left"
                                            TextAlignment="Center" Margin="0,0,5,0">
-                                    <TextBlock.Style>
-                                        <Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
-                                            <Setter Property="Text" Value="{Binding Name, Converter={StaticResource ObjectToStringConverter}}" />
-                                            <Style.Triggers>
-                                                <DataTrigger Binding="{Binding Name, Converter={StaticResource ObjectToStringConverter}}" Value="{x:Null}">
-                                                    <Setter Property="Text" Value="{DynamicResource LOCNone}" />
-                                                </DataTrigger>
-                                                <DataTrigger Binding="{Binding Name, Converter={StaticResource ObjectToStringConverter}}" Value="">
-                                                    <Setter Property="Text" Value="{DynamicResource LOCNone}" />
-                                                </DataTrigger>
-                                            </Style.Triggers>
-                                        </Style>
-                                    </TextBlock.Style>
-                                </TextBlock>
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
+                                                <Setter Property="Text" Value="{Binding Name, Converter={StaticResource ObjectToStringConverter}}" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Name, Converter={StaticResource ObjectToStringConverter}}" Value="{x:Null}">
+                                                        <Setter Property="Text" Value="{DynamicResource LOCNone}" />
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding Name, Converter={StaticResource ObjectToStringConverter}}" Value="">
+                                                        <Setter Property="Text" Value="{DynamicResource LOCNone}" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </Border>
                                 <Grid DockPanel.Dock="Left" Margin="5,0,10,0">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="Auto"/>
