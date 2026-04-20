@@ -59,7 +59,7 @@
     <sys:Double x:Key="PanelsNoiseBackgroundOpacity">0.01</sys:Double>
     <sys:Double x:Key="StandardWindowNoiseBackgroundOpacity">0.01</sys:Double>
     <sys:Double x:Key="BackgroundImageNoiseBackgroundOpacity">0.015</sys:Double>
-    <FontFamily x:Key="FontFamily">Segoe UI</FontFamily>
+    <FontFamily x:Key="FontFamily">Noto Sans</FontFamily>
     <FontFamily x:Key="MonospaceFontFamily">Consolas</FontFamily>
     <Thickness x:Key="PopupMenuPadding">0,10,0,10</Thickness>
     <Thickness x:Key="PopupBorderThickness">1</Thickness>
@@ -103,7 +103,8 @@
     <Color x:Key="MainColorDark">#2f3543</Color>
     <Color x:Key="HoverColor">#48494b</Color>
     <Color x:Key="GlyphColor">#c2c2c2</Color>
-    <Color x:Key="PropertyItemButtonTextColor">#5f9b72</Color>
+    <Color x:Key="PropertyItemButtonTextColor">#c87c43</Color><!-- 5f9b72 -->
+	<Color x:Key="PropertyItemButtonTextHoverColor">#EA7721</Color><!-- 5f9b72 -->
     <Color x:Key="GlyphColorSecondary">#007738</Color>
     <Color x:Key="DataChangeNotifColor">#ffa500</Color>
     <!---->
@@ -155,6 +156,7 @@
     <Color x:Key="TopPanelFilterToggleBackgroundColor">#303030</Color>
 
     <SolidColorBrush x:Key="PropertyItemButtonTextBrush" Color="{DynamicResource PropertyItemButtonTextColor}" />
+	<SolidColorBrush x:Key="PropertyItemButtonTextHoverBrush" Color="{DynamicResource PropertyItemButtonTextHoverColor}" />
     
     <SolidColorBrush x:Key="TopPanelItemBackgroundBrush" Color="{DynamicResource TopPanelItemBackgroundColor}" />
     <SolidColorBrush x:Key="TopPanelItemHoverBackgroundBrush" Color="{DynamicResource TopPanelItemHoverBackgroundColor}" />
