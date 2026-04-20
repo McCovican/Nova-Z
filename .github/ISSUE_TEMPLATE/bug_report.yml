@@ -1,4 +1,4 @@
-name: Bug report
+name: Bug Report
 description: Report a bug to help us improve
 labels: ['bug']
 body:
@@ -6,10 +6,25 @@ body:
     attributes:
       value: |
         **Check for existing issues first**
-        Before reporting a bug, please use the issue search to check if the problem has already been reported. This helps avoid duplicates and speeds up resolution.
+        Before creating a new support request, please use the search function here in the Issues tracker to check if this problem or request has already been submitted.        
+        Please also be sure to check the original [Nova-X Issues](https://github.com/darklinkpower/Nova-X) tracker. That theme has far more users, and your question may have already been answered there.
+        
+        If an issue exists, but has not been answered, **please do not create a new ticket**.
+        Kindly keep in mind that *both* themes are single-developer projects.
 
         **Instructions**
         Change the placeholder title automatically filled in the template and provide the necessary details in the sections below. Fields marked with a * are required.
+  - type: checkboxes
+    attributes:
+      label: Pre-Report Checklist
+      description: Before submitting your report, please confirm the following
+      options:
+        - label: "I have serched existing issues (both open **and** closed, both here and at Nova-X) and confirm that this bug has not been addressed before."
+          required: true
+        - label: "I have confirmed that this bug does not exist in the base [Nova-X Theme](https://github.com/darklinkpower/Nova-X)."
+          required: true
+        - label: "This is not a feature request."
+          required: true
   - type: textarea
     attributes:
       label: Bug Description

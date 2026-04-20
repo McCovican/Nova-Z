@@ -1,23 +1,27 @@
-name: Support request
+name: Support Request
 description: Create a support ticket
 labels: ['support']
 body:
   - type: markdown
     attributes:
       value: |
-        **Search for existing issues first**
-        Before creating a new support request, please use the issue search in the repository to check if this problem or request has already been opened. This helps to avoid duplicates and speeds up response times.
+        **Check for existing issues first**
+        Before creating a new support request, please use the search function here in the Issues tracker to check if this problem or request has already been submitted.        
+        Please also be sure to check the original [Nova-X Issues](https://github.com/darklinkpower/Nova-X) tracker. That theme has far more users, and your question may have already been answered there.
+        
+        If an issue exists, but has not been answered, **please do not create a new ticket**.
+        Kindly keep in mind that *both* themes are single-developer projects.
 
         **Instructions**
         Please change the placeholder title automatically filled in the template and provide the information requested in the sections below. Fields marked with a * are required.
   - type: checkboxes
     attributes:
       label: Pre-Request Checklist
-      description: Please confirm the following before submitting your request
+      description: Before submitting your report, please confirm the following
       options:
-        - label: "I have checked Playnite's settings (e.g., in Settings -> Appearance) and confirmed that this change cannot be made there."
+        - label: "I have serched existing issues (both open **and** closed, both here and at Nova-X) and confirm that this request has not been posted before."
           required: true
-        - label: "I have checked that this cannot be changed with an option provided by the theme using the [ThemeModifier plugin](https://playnite.link/addons.html#playnite-thememodifier-plugin)."
+        - label: "This is not a feature request."
           required: true
   - type: textarea
     attributes:

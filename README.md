@@ -1,4 +1,4 @@
-![Attribution](https://img.shields.io/badge/Original_Author-darklinkpower-blue?logo=github) ![License](https://img.shields.io/badge/License-MIT-green) ![Progress](https://img.shields.io/badge/Fork_Progress-5%25-red) ![Status](https://img.shields.io/badge/Jank-79.92%25-yellow)
+![Attribution](https://img.shields.io/badge/Original_Author-darklinkpower-blue?logo=github) ![License](https://img.shields.io/badge/License-MIT-green) ![Progress](https://img.shields.io/badge/Fork_Progress-7%25-red) ![Status](https://img.shields.io/badge/Jank-79.92%25-yellow)
 
 # Nova Z
 A theme for [PlayNite](https://github.com/JosefNemec/Playnite/) based on darklinkpower's [Nova-X](https://github.com/darklinkpower/Nova-X/).
